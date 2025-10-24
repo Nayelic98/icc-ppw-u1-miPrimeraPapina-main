@@ -9,7 +9,7 @@
 **Unidad:** 1.2 – Estándares Web  
 **Estudiante:** Nayeli Barbecho
 **Repositorio:** [https://github.com/Nayelic98/icc-ppw-u1-miPrimeraPapina-main](https://github.com/Nayelic98/icc-ppw-u1-miPrimeraPapina-main)  
-**Página desplegada (GitHub Pages):** [https://pablot18.github.io/icc-ppw-u1-miPrimeraPapina/](https://pablot18.github.io/icc-ppw-u1-miPrimeraPapina/)  
+**Página desplegada (GitHub Pages):** [https://nayelic98.github.io/icc-ppw-u1-miPrimeraPapina-main/](https://nayelic98.github.io/icc-ppw-u1-miPrimeraPapina-main/)  
 
 ---
 
@@ -197,4 +197,5 @@ El archivo `script.js` incorpora dos acciones básicas:
 ## Capturas de pantalla del proyecto final
 
 
-![alt text](<"Screenshot 2025-10-23 205713.png">)
+![Captura de pantalla](Screenshot 2025-10-23 205713.png)
+
