@@ -195,7 +195,7 @@ El archivo `script.js` incorpora dos acciones básicas:
     });
     });
 ## Capturas de pantalla del proyecto final
-![Captura de pantalla del proyecto](Screenshot 2025-10-23 205713.png")
+![Captura de pantalla del proyecto](Screenshot 2025-10-23 205713.png)
 
 
 
