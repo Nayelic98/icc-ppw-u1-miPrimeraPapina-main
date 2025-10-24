@@ -40,7 +40,8 @@
                 <li><button onclick="alert('Guardado con éxito')">Guardar</button></li>
                 <li><button onclick="alert('Imprimiendo...')">Imprimir</button></li>
 </menu>
-```
+
+
 <canvas id="miCanvas" width="300" height="200" style="border:1px solid #000;"></canvas>
 
 <script>
@@ -53,7 +54,7 @@
         ctx.fillStyle = "red";
         ctx.fill();
 </script>
-
+```
 ---
 
 #  Práctica 2 – Adición de CSS y JavaScript
@@ -120,7 +121,7 @@ Propiedad nueva 1: transition → utilizada en el botón para crear un efecto su
 Propiedad nueva 2: box-shadow → da sombra y color de texto.
 **Ejemplo en el código:**
 
-AGREGAR DOS EJEMPLOS DE SU CODIGO CSS
+DOS EJEMPLOS DEL CODIGO CSS
 
 ```css
 section {
@@ -155,50 +156,51 @@ El archivo `script.js` incorpora dos acciones básicas:
 
 2. **Cambiar el color del título al pasar el mouse por encima**
 
-   ```javascript
-   const titulo = document.getElementById("titulo");
-   titulo.addEventListener("mouseover", () => {
-     titulo.style.color = "red";
-   });
-   titulo.addEventListener("mouseout", () => {
-     titulo.style.color = "blue ";
-   });
-   ```
+    ```javascript
+    const titulo = document.getElementById("titulo");
+    titulo.addEventListener("mouseover", () => {
+        titulo.style.color = "red";
+    });
+    titulo.addEventListener("mouseout", () => {
+        titulo.style.color = "blue ";
+    });
+    ```
 3. **Cambiar el color de fondo de la seccion**
     ```javascript
-    const botonesMenu = document.querySelectorAll("menu button");
-    botonesMenu.forEach(boton => {
-    boton.addEventListener("click", () => {
-        if (boton.textContent === "Nuevo") {
-        alert("Nuevo documento creado");
-        } else if (boton.textContent === "Guardar") {
-        alert("Guardado con éxito");
-        } else if (boton.textContent === "Imprimir") {
-        alert("Imprimiendo...");
-        }
-    });
-    });
+        const botonesMenu = document.querySelectorAll("menu button");
+        botonesMenu.forEach(boton => {
+        boton.addEventListener("click", () => {
+            if (boton.textContent === "Nuevo") {
+            alert("Nuevo documento creado");
+            } else if (boton.textContent === "Guardar") {
+            alert("Guardado con éxito");
+            } else if (boton.textContent === "Imprimir") {
+            alert("Imprimiendo...");
+            }
+        });
+        });
 
 
 4. **Poner un mensaje de alerta al tocar los botones del menu**
-```javascript
-    const botonesMenu = document.querySelectorAll("menu button");
-    botonesMenu.forEach(boton => {
-    boton.addEventListener("click", () => {
-        if (boton.textContent === "Nuevo") {
-        alert("Nuevo documento creado");
-        } else if (boton.textContent === "Guardar") {
-        alert("Guardado con éxito");
-        } else if (boton.textContent === "Imprimir") {
-        alert("Imprimiendo...");
-        }
-    });
-    });
-```    
+    ```javascript
+        const botonesMenu = document.querySelectorAll("menu button");
+        botonesMenu.forEach(boton => {
+        boton.addEventListener("click", () => {
+            if (boton.textContent === "Nuevo") {
+            alert("Nuevo documento creado");
+            } else if (boton.textContent === "Guardar") {
+            alert("Guardado con éxito");
+            } else if (boton.textContent === "Imprimir") {
+            alert("Imprimiendo...");
+            }
+        });
+        });
+    ```    
 ## Capturas de pantalla del proyecto final
 
-![Captura de pantalla del proyecto](Screenshot 2025-10-23 205713.png)
-
+<p align="center">
+  <img src="Screenshot 2025-10-23 205713.png"" alt="Captura de pantalla del proyecto" width="800" />
+</p>
 
 
 
