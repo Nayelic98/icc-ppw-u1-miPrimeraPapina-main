@@ -182,19 +182,19 @@ El archivo `script.js` incorpora dos acciones básicas:
 
 4. **Poner un mensaje de alerta al tocar los botones del menu**
 ```javascript
-const botonesMenu = document.querySelectorAll("menu button");
-botonesMenu.forEach(boton => {
-  boton.addEventListener("click", () => {
-    if (boton.textContent === "Nuevo") {
-      alert("Nuevo documento creado");
-    } else if (boton.textContent === "Guardar") {
-      alert("Guardado con éxito");
-    } else if (boton.textContent === "Imprimir") {
-      alert("Imprimiendo...");
-    }
-  });
-});
+    const botonesMenu = document.querySelectorAll("menu button");
+    botonesMenu.forEach(boton => {
+    boton.addEventListener("click", () => {
+        if (boton.textContent === "Nuevo") {
+        alert("Nuevo documento creado");
+        } else if (boton.textContent === "Guardar") {
+        alert("Guardado con éxito");
+        } else if (boton.textContent === "Imprimir") {
+        alert("Imprimiendo...");
+        }
+    });
+    });
 ## Capturas de pantalla del proyecto final
 
 
-![alt text](<Screenshot 2025-10-23 205713.png>)
+![alt text](<"Screenshot 2025-10-23 205713.png">)
