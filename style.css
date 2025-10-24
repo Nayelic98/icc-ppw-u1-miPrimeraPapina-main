@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #ffffff;
+}
+header {
+    background-color: #a296e0;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid #564e80;
+}
+h2 {
+    color: #215693;
+    border-bottom: 2px solid #6e8fd6;
+    padding-bottom: 5px;
+}
+section {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    color: #215693;
+}
+footer {
+    background-color: #a296e0;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+menu {
+    margin: 20px 0;
+    text-align: left;
+}
+menu button {
+    background-color: #564e80;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #a9a8b0;
+    color: white;
+}
+table, th, td {
+    border: 1px solid #564e80;
+}
+button {
+    background-color: #564e80;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+section h3 {
+    color: #6e8fd6;
+}
+button:hover {
+    background-color: #423d66;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}

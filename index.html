@@ -6,6 +6,10 @@
     <meta name="description" content="Esta es mi primera pagina web con etiquetas HTML5 nuevas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera página</title>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 <body>
     <header>
@@ -16,7 +20,7 @@
     
 
     <section id="tabla">
-        <h2>Tabla de contenido</h2>
+        <h2 id="titulo">Tabla de contenido</h2>
         <table border="1">
             <tr>
                 <th>Etiqueta</th>
@@ -35,6 +39,7 @@
                 <td>Define contenido independiente y autónomo.</td>
             
         </table>
+        <button id="agregarFila">Agregar un elemento</button>
     </section>
 
     <section id="etiquetas">
@@ -46,9 +51,9 @@
 
             
             <menu>
-                <li><button onclick="alert('Nuevo documento creado')">Nuevo</button></li>
-                <li><button onclick="alert('Guardado con éxito')">Guardar</button></li>
-                <li><button onclick="alert('Imprimiendo...')">Imprimir</button></li>
+                <li><button>Nuevo</button></li>
+                <li><button>Guardar</button></li>
+                <li><button>Imprimir</button></li>
             </menu>
         </article>
 
@@ -75,5 +80,6 @@
     <footer>
         <p>Creado por: <strong>Nayeli B. </strong> Asignatura:Programacion y Plataformas Web</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

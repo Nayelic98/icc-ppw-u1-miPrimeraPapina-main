@@ -30,19 +30,29 @@
 
 | Etiqueta | Descripción | Implementación |
 |-----------|--------------|----------------|
-| `<menu>` | Define una lista de comandos o enlaces que el usuario puede interactuar, como un conjunto de opciones o atajos rápidos(3 botones creados con menú) |
-| `<canvas>` | Barra de progreso de una tarea | Representa 70% completado |
+| `<menu>` | Define una lista de comandos o enlaces que el usuario puede interactuar, como un conjunto de opciones o atajos rápidos|3 botones creados con menú |
+| `<canvas>` |Se utiliza para dibujar gráficos, animaciones o diagramas usando JavaScript. Permite representar contenido visual dinámico.| Se dibujo una cuadrado azul y un circulo rojo |
 
 **Código usado:**
 ```html
-<figure>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML5">
-  <figcaption>Logo de HTML5</figcaption>
-</figure>
-
-<progress value="70" max="100">70%</progress>
+<menu>
+                <li><button onclick="alert('Nuevo documento creado')">Nuevo</button></li>
+                <li><button onclick="alert('Guardado con éxito')">Guardar</button></li>
+                <li><button onclick="alert('Imprimiendo...')">Imprimir</button></li>
+</menu>
 ```
+<canvas id="miCanvas" width="300" height="200" style="border:1px solid #000;"></canvas>
 
+<script>
+        const canvas = document.getElementById("miCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(50, 50, 100, 75);
+        ctx.beginPath();
+        ctx.arc(200, 100, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+</script>
 
 ---
 
@@ -59,7 +69,7 @@
 Estructura final del proyecto:
 
 ```
-icc-ppw-u1-mi_pagina_web/
+icc-ppw-u1-mi_papina_web/
 │
 ├── index.html
 ├── style.css
@@ -67,7 +77,6 @@ icc-ppw-u1-mi_pagina_web/
 └── README.md
 ```
 
- * CAMBIAR SEGUN SU ESTRUCTURA
 
 ---
 
@@ -78,47 +87,53 @@ Los nuevos archivos se enlazaron dentro del documento `index.html` de la siguien
 **En el `<head>` (para el CSS):**
 
 ```html
-COMLETAR
+<link
+        rel="stylesheet"
+        href="style.css"
+    >
 ```
 
 **Antes de cerrar el `<body>` (para el JavaScript):**
 
 ```html
-COMLETAR
+<script src="script.js"></script>
 ```
 
 ---
 
-### 3. Estilos aplicados con CSS
+| Elemento        | Estilo implementado                                                                                                                                                     | Descripción                                                                              |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `body`          | `font-family: Arial, sans-serif; margin: 10px; padding: 0; background-color: #ffffff;`                                                                                  | Define la fuente general, márgenes, relleno y color de fondo de toda la página.          |
+| `header`        | `background-color: #a296e0; color: white; padding: 10px 0; text-align: center; border-bottom: 3px solid #564e80;`                                                       | Aplica color de fondo, color de texto, centrado, padding y línea inferior al encabezado. |
+| `h2`            | `color: #215693; border-bottom: 2px solid #6e8fd6; padding-bottom: 5px;`                                                                                                | Colorea el título de sección y agrega una línea inferior con padding para separación.    |
+| `section`       | `margin: 20px; padding: 15px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); color: #215693;`                                                           | Espaciado interno y externo, bordes redondeados, sombra y color de texto de la sección.  |
+| `footer`        | `background-color: #a296e0; color: white; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0;`                                                | Estilo de pie de página fijo, con color, centrado y padding.                             |
+| `menu`          | `margin: 20px 0; text-align: left;`                                                                                                                                     | Aplica márgenes y alineación a la lista de comandos.                                     |
+| `menu button`   | `background-color: #564e80; color: white; border: none; padding: 10px 15px; margin: 5px; cursor: pointer; border-radius: 5px; box-shadow: 2px 2px 6px rgba(0,0,0,0.3);` | Botones con color, borde redondeado, sombra, padding, margen y cursor pointer.           |
+| `button:hover`  | `background-color: #423d66; transform: scale(1.05); transition: transform 0.2s ease;`                                                                                   | Efecto hover para aumentar tamaño y cambiar color al pasar el cursor.                    |
+| `table`         | `width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #a9a8b0; color: white;`                                                                    | Define ancho completo, colapsa bordes, agrega margen superior y color de fondo/ texto.   |
+| `table, th, td` | `border: 1px solid #564e80;`                                                                                                                                            | Aplica borde a toda la tabla y celdas.                                                   |
+| `th, td`        | `padding: 8px; text-align: left;`                                                                                                                                       | Espaciado interno y alineación del contenido de celdas.                                  |
+| `section h3`    | `color: #6e8fd6;`                                                                                                                                                       | Color específico para los subtítulos dentro de cada sección.                             |
 
-* COMLETAR LA TABLA
-
-| Elemento                    | Estilo implementado                                            | Descripción                             |
-| --------------------------- | -------------------------------------------------------------- | --------------------------------------- |
-| `body`                      |         |         |
-| `header`                    | |
-| `table`                     |                              |                  |
-| `button`                    |                                   |   |
-| `section`                   |                                        |          |
-| `progress`                  | `accent-color: #007bff; width: 100%;`                          | Personalización de la barra de progreso |
-
-
+Propiedad nueva 1: transition → utilizada en el botón para crear un efecto suave al pasar el mouse. 
+Propiedad nueva 2: box-shadow → da sombra y color de texto.
 **Ejemplo en el código:**
 
 AGREGAR DOS EJEMPLOS DE SU CODIGO CSS
 
 ```css
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
+section {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    color: #215693;
 }
-
 button:hover {
-  background-color: #0056b3;
+    background-color: #423d66;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
 ```
 
@@ -143,16 +158,43 @@ El archivo `script.js` incorpora dos acciones básicas:
    ```javascript
    const titulo = document.getElementById("titulo");
    titulo.addEventListener("mouseover", () => {
-     titulo.style.color = "orange";
+     titulo.style.color = "red";
    });
    titulo.addEventListener("mouseout", () => {
-     titulo.style.color = "white";
+     titulo.style.color = "blue ";
    });
    ```
+3. **Cambiar el color de fondo de la seccion**
+    ```javascript
+    const botonesMenu = document.querySelectorAll("menu button");
+    botonesMenu.forEach(boton => {
+    boton.addEventListener("click", () => {
+        if (boton.textContent === "Nuevo") {
+        alert("Nuevo documento creado");
+        } else if (boton.textContent === "Guardar") {
+        alert("Guardado con éxito");
+        } else if (boton.textContent === "Imprimir") {
+        alert("Imprimiendo...");
+        }
+    });
+    });
 
 
+4. **Poner un mensaje de alerta al tocar los botones del menu**
+```javascript
+const botonesMenu = document.querySelectorAll("menu button");
+botonesMenu.forEach(boton => {
+  boton.addEventListener("click", () => {
+    if (boton.textContent === "Nuevo") {
+      alert("Nuevo documento creado");
+    } else if (boton.textContent === "Guardar") {
+      alert("Guardado con éxito");
+    } else if (boton.textContent === "Imprimir") {
+      alert("Imprimiendo...");
+    }
+  });
+});
 ## Capturas de pantalla del proyecto final
 
-* Agregar su captura de pantalla del proyecto final funcionando en el navegador, de ambas versiones (sin y con CSS/JS)
 
-![alt text](<Captura de pantalla 2025-10-14 a la(s) 3.35.33 p. m..png>)
+![alt text](<Screenshot 2025-10-23 205713.png>)
