@@ -1,61 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Nayeli B.">
-    <meta name="description" content="Esta es mi primera pagina web">
+    <meta name="description" content="Esta es mi primera pagina web con etiquetas HTML5 nuevas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina</title>
-
+    <title>Mi primera página</title>
 </head>
 <body>
     <header>
         <h1>Documento HTML5</h1>
-        <nav>
-            <ul>
-                <li><a href="#tabla">Tabla de contenido</a></li>
-                <li><a href="#etiquetas">Etiquetas nuevas</a></li>
-                
-            </ul>
-        </nav>
+       
     </header>
+
+    
+
     <section id="tabla">
         <h2>Tabla de contenido</h2>
         <table border="1">
             <tr>
                 <th>Etiqueta</th>
-                <th>Descripcion</th>
+                <th>Descripción</th>
             </tr>
             <tr>
                 <td>&lt;header&gt;</td>
-                <td>Define un encabezado para un documento o una seccion</td>
-            </tr>
-            <tr>
-                <td>&lt;nav&gt;</td>
-                <td>Define un conjunto de enlaces de navegacion</td>
-            </tr>
+                <td>Define un encabezado para un documento o una sección.</td>
+            
             <tr>
                 <td>&lt;section&gt;</td>
-                <td>Define una seccion en un documento</td>
+                <td>Define una sección dentro de un documento.</td>
             </tr>
             <tr>
                 <td>&lt;article&gt;</td>
-                <td>Define contenido independiente y autonomo</td>
-            </tr>
+                <td>Define contenido independiente y autónomo.</td>
+            
         </table>
     </section>
+
     <section id="etiquetas">
         <h2>Etiquetas nuevas en HTML5</h2>
+
         <article>
-            <h3>&lt;header&gt;</h3>
-            <p>La etiqueta &lt;header&gt; se utiliza para definir un encabezado para un documento o una seccion. Puede contener elementos como titulos, logotipos y navegacion.</p>
+            <h3>&lt;menu&gt;</h3>
+            <p>La etiqueta &lt;menu&gt; define una lista de comandos o enlaces que el usuario puede interactuar, como un conjunto de opciones o atajos rápidos.</p>
+
+            
+            <menu>
+                <li><button onclick="alert('Nuevo documento creado')">Nuevo</button></li>
+                <li><button onclick="alert('Guardado con éxito')">Guardar</button></li>
+                <li><button onclick="alert('Imprimiendo...')">Imprimir</button></li>
+            </menu>
         </article>
-        <aside>
-            <h3>&lt;nav&gt;</h3>
-            <p>La etiqueta &lt;nav&gt; se utiliza para definir un conjunto de enlaces de navegacion. Ayuda a los usuarios a navegar por el sitio web.</p>
-        </aside>
+
+        <article>
+            <h3>&lt;canvas&gt;</h3>
+            <p>La etiqueta &lt;canvas&gt; se utiliza para dibujar gráficos, animaciones o diagramas usando JavaScript. Permite representar contenido visual dinámico.</p>
+
+            
+            <canvas id="miCanvas" width="300" height="200" style="border:1px solid #000;"></canvas>
+
+            <script>
+                const canvas = document.getElementById("miCanvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "skyblue";
+                ctx.fillRect(50, 50, 100, 75);
+                ctx.beginPath();
+                ctx.arc(200, 100, 40, 0, 2 * Math.PI);
+                ctx.fillStyle = "red";
+                ctx.fill();
+            </script>
+        </article>
     </section>
+
     <footer>
-        <p>Creado por: Nayeli B.</p>
+        <p>Creado por: <strong>Nayeli B.</p>
+    </footer>
 </body>
 </html>
